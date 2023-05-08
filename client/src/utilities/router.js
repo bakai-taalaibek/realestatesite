@@ -3,6 +3,7 @@ import App from "../App";
 import ErrorPage from '../components/ErrorPage'
 import Login from "../components/Login";
 import Register from "../components/Register";
+import AdsList from "../components/AdsList";
 
 export const router = createBrowserRouter([
   {
@@ -10,6 +11,10 @@ export const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: '',
+        element: <AdsList />,
+      },
       {
         path: 'login',
         element: <Login />,
