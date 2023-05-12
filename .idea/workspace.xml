@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0913fade-d689-4e9f-b728-93ad0cc18fa4" name="Changes" comment="Изменения Branch - Taalai &#10;&#10;1) Исправлены стили и отображение кода">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AnnouncementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AnnouncementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/UserController.java" afterDir="false" />
-    </list>
+    <list default="true" id="0913fade-d689-4e9f-b728-93ad0cc18fa4" name="Changes" comment="Изменения Branch - Taalai &#10;&#10;1) application.proporties" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,6 +195,7 @@
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Исправил таблицу Announcement, поменял List&lt;User&gt; на User" />
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Добавил Spring Security" />
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger" />
+    <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) application.proporties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) application.proporties" />
   </component>
 </project>
