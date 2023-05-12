@@ -4,35 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0913fade-d689-4e9f-b728-93ad0cc18fa4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/enums/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/config/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/controllers/AnnouncementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AnnouncementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/mappers/AnnouncementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/mappers/AnnouncementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/mappers/BaseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/mappers/BaseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/mappers/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/mappers/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/models/dtos/AnnouncementDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/dtos/AnnouncementDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/models/dtos/BaseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/dtos/BaseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/models/dtos/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/dtos/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/models/entities/Announcement.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/Announcement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/models/entities/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/models/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/models/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/models/enums/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/enums/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/realestatesiteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/realestatesiteApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/repository/AnnouncementRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/repository/AnnouncementRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/services/AnnouncementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/services/AnnouncementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/services/impl/AnnouncementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/services/impl/AnnouncementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/example/realestatesite/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/services/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/example/realestatesite/mappers/AnnouncementMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/AnnouncementMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/example/realestatesite/mappers/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/UserMapperImpl.java" afterDir="false" />
+    <list default="true" id="0913fade-d689-4e9f-b728-93ad0cc18fa4" name="Changes" comment="Изменения Branch - Taalai &#10;&#10;1) Поменял com.example на com.company&#10;2) В таблице User добавил поле Gender&#10;3) Добавил enum Gender (Male, Female)&#10;4) Добавил зависимости JWT Token&#10;5) Server-port 3001&#10;6) Названия базы поменял на db_realestate&#10;7) Не забудьте поменять пароль от PostgreSQL">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/dtos/AnnouncementDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/dtos/AnnouncementDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/Announcement.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/Announcement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/config/ApplicationConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/controllers/AnnouncementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/controllers/AuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/controllers/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/mappers/AnnouncementMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/mappers/AnnouncementMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/mappers/BaseMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/mappers/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/mappers/UserMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/models/dtos/AnnouncementDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/models/dtos/BaseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/models/dtos/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/models/entities/Announcement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/models/entities/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/models/entities/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/models/entities/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/models/enums/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/realestatesiteApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/repository/AnnouncementRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/repository/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/services/AnnouncementService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/services/impl/AnnouncementServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/example/realestatesite/services/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/AnnouncementMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/AnnouncementMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/UserMapperImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,14 +129,32 @@
       <recent name="com.example.realestatesite.models.entities" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="realestatesiteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="realestatesiteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="realestatesite" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.realestatesite.realestatesiteApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.realestatesite.realestatesiteApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.realestatesite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.realestatesiteApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -137,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683637171138</updated>
       <workItem from="1683637172711" duration="3058000" />
-      <workItem from="1683888052215" duration="979000" />
+      <workItem from="1683888052215" duration="3351000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил Сущности пользователя(User) и объявления(Announcement), а также CRUD к этим сущностям. По началу добавил файл data.sql по началу всё работало хорошо, но потом что-то вместе с файлом не запускается проект без него всё работает хорошо. В файле скрипты для заполнения бд.">
       <created>1683640085691</created>
@@ -146,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683640085692</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Изменения Branch - Taalai &#10;&#10;1) Поменял com.example на com.company&#10;2) В таблице User добавил поле Gender&#10;3) Добавил enum Gender (Male, Female)&#10;4) Добавил зависимости JWT Token&#10;5) Server-port 3001&#10;6) Названия базы поменял на db_realestate&#10;7) Не забудьте поменять пароль от PostgreSQL">
+      <created>1683889263199</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683889263199</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +189,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавил Сущности пользователя(User) и объявления(Announcement), а также CRUD к этим сущностям. По началу добавил файл data.sql по началу всё работало хорошо, но потом что-то вместе с файлом не запускается проект без него всё работает хорошо. В файле скрипты для заполнения бд." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил Сущности пользователя(User) и объявления(Announcement), а также CRUD к этим сущностям. По началу добавил файл data.sql по началу всё работало хорошо, но потом что-то вместе с файлом не запускается проект без него всё работает хорошо. В файле скрипты для заполнения бд." />
+    <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Поменял com.example на com.company&#10;2) В таблице User добавил поле Gender&#10;3) Добавил enum Gender (Male, Female)&#10;4) Добавил зависимости JWT Token&#10;5) Server-port 3001&#10;6) Названия базы поменял на db_realestate&#10;7) Не забудьте поменять пароль от PostgreSQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) Поменял com.example на com.company&#10;2) В таблице User добавил поле Gender&#10;3) Добавил enum Gender (Male, Female)&#10;4) Добавил зависимости JWT Token&#10;5) Server-port 3001&#10;6) Названия базы поменял на db_realestate&#10;7) Не забудьте поменять пароль от PostgreSQL" />
   </component>
 </project>

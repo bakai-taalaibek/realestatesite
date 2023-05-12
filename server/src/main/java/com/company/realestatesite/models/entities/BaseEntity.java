@@ -18,16 +18,16 @@ public class BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    Long id;
     @Column(name = "created")
     @JsonFormat(pattern = "dd.MM.yyyy")
-    private Date created;
+    Date created;
     @Column(name = "updated")
     @JsonFormat(pattern = "dd.MM.yyyy")
-    private Date updated;
+    Date updated;
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
-    private Status status;
+    Status status;
 
     @PrePersist
     protected void onCreate() {

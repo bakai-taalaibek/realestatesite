@@ -1,12 +1,12 @@
 package com.company.realestatesite.services.impl;
 
 import com.company.realestatesite.models.dtos.UserDto;
+import com.company.realestatesite.models.entities.Role;
+import com.company.realestatesite.models.entities.User;
 import com.company.realestatesite.models.enums.Status;
 import com.company.realestatesite.repository.RoleRepository;
 import com.company.realestatesite.repository.UserRepository;
 import com.company.realestatesite.mappers.UserMapper;
-import com.company.realestatesite.models.entities.Role;
-import com.company.realestatesite.models.entities.User;
 import com.company.realestatesite.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -55,6 +55,7 @@ public class UserServiceImpl implements UserService {
     }
 
     private User toEntity(UserDto userDto) {
+
 
         Role roleUser = roleRepository.findByName("ROLE_USER");
         List<Role> userRoles = new ArrayList<>();

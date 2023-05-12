@@ -2,17 +2,14 @@ package com.company.realestatesite.mappers;
 
 import com.company.realestatesite.models.dtos.AnnouncementDto;
 import com.company.realestatesite.models.entities.Announcement;
-
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-05-09T19:41:41+0600",
-    comments = "version: 1.5.3.Final, compiler: javac, environment: Java 18.0.2 (Oracle Corporation)"
-    date = "2023-05-12T02:06:45+0600",
-    comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.6 (Private Build)"
+    date = "2023-05-12T17:38:25+0600",
+    comments = "version: 1.5.3.Final, compiler: javac, environment: Java 11.0.18 (Eclipse Adoptium)"
 )
 public class AnnouncementMapperImpl implements AnnouncementMapper {
 

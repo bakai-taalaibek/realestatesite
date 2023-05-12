@@ -52,7 +52,9 @@ public class Announcement extends BaseEntity{
     @NotNull()
     private String address;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    /*@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "user_id", nullable = false)
-    private List<User> user;
+    private List<User> user;*/
+    @ManyToOne
+    private User user;
 }

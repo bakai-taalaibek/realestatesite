@@ -20,19 +20,19 @@ public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    Long id;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
-    private Status status;
+    Status status;
 
     @Column(name = "name", unique = true)
     @NotNull
-    private String name;
+    String name;
 
     @JsonIgnore
     @ManyToMany(mappedBy = "roles", fetch = FetchType.LAZY)
-    private List<User> users;
+    List<User> users;
 
     @PrePersist
     protected void onCreate() {

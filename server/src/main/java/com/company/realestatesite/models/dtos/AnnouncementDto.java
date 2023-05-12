@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
+
 import java.util.List;
 
 @Getter
@@ -23,5 +24,5 @@ public class AnnouncementDto extends BaseDto {
     private Integer rooms;
     private String city;
     private String address;
-    private List<User> user;
+    private User user;
 }
