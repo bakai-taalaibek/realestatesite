@@ -8,7 +8,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-05-12T17:38:25+0600",
+    date = "2023-05-12T18:23:46+0600",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 11.0.18 (Eclipse Adoptium)"
 )
 public class AnnouncementMapperImpl implements AnnouncementMapper {

@@ -1,6 +1,7 @@
 package com.company.realestatesite.models.dtos;
 
 import com.company.realestatesite.models.entities.Role;
+import com.company.realestatesite.models.enums.Gender;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -14,9 +15,10 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class UserDto extends BaseDto{
-    private String username;
-    private String email;
-    private String password;
-    private Integer age;
-    private List<Role> roles;
+    String username;
+    String email;
+    String password;
+    Gender gender;
+    int age;
+    List<Role> roles;
 }
