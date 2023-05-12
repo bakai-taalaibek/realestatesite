@@ -15,10 +15,11 @@ import java.util.Date;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class BaseDto {
-    private Long id;
+    Long id;
     @JsonFormat(pattern = "dd.MM.yyyy")
-    private Date created;
+    Date created;
     @JsonFormat(pattern = "dd.MM.yyyy")
-    private Date updated;
-    private Status status;
+    Date updated;
+    Status status;
 }
+

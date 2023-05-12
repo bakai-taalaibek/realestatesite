@@ -32,7 +32,6 @@ public class User extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "gender")
-    @NotNull()
     Gender gender;
 
     @Column(name = "age")
