@@ -200,6 +200,7 @@
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Исправил таблицу Announcement, поменял List&lt;User&gt; на User" />
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Добавил Spring Security" />
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger" />
+    <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Настройки Cross" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) Настройки Cross" />
   </component>
 </project>
