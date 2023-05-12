@@ -18,7 +18,7 @@ const Login = () => {
       setPassword('')
       adService.setToken(user.token)
       window.localStorage.setItem(
-        'loggedBlogappUser', JSON.stringify(user)
+        'loggedUser', JSON.stringify(user)
       )
     }
     catch (exeption) {

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import register from '../services/register'
 import adService from '../services/ads'
+import loginService from '../services/login'
 
 const Register = () => {
   const [username, setUsername] = useState('')
@@ -10,23 +11,33 @@ const Register = () => {
   const [age, setAge] = useState('')
   const [user, setUser] = useState(null)
 
-  const handleLogin = async (event) => {
+  const handleRegistration = async (event) => {
     event.preventDefault()
     try {
-      const user = await register({
+      const registrationSuccess = await register({
         username, password, email, gender, age
       })
-      setUser(user)
-      setUsername('')
-      setPassword('')
-      adService.setToken(user.token)
-      window.localStorage.setItem(
-        'loggedBlogappUser', JSON.stringify(user)
-      )
+
+      try {
+        const user = await loginService({
+          username, password
+        })
+        setUser(user)
+        setUsername('')
+        setPassword('')
+        adService.setToken(user.token)
+        window.localStorage.setItem(
+          'loggedUser', JSON.stringify(user)
+        )
+      }
+      catch (exeption) {
+        console.log('Error while trying to log in')
+      }
+
     }
     catch (exeption) {
-      console.log('Error while trying to log in')
-    }
+      console.log('Error while trying to register')
+    }    
   }
 
   return (
@@ -34,7 +45,7 @@ const Register = () => {
       <h2 >
         Зарегистрироваться
       </h2>
-      <form onSubmit={ handleLogin }>
+      <form onSubmit={ handleRegistration }>
         <div>
           Логин
           <input 
@@ -45,6 +56,7 @@ const Register = () => {
             onChange={({ target }) => setUsername(target.value)}
           />
         </div>
+
         <div>
           Пароль
           <input 
@@ -55,6 +67,7 @@ const Register = () => {
             onChange={({ target }) => setPassword(target.value)}
           />
         </div>
+
         <div>
           Email
           <input 
@@ -65,8 +78,9 @@ const Register = () => {
             onChange={({ target }) => setEmail(target.value)}
           />
         </div>
+        
         <div>
-          Age
+          Возраст
           <input 
             className={ formField }
             type='number'
@@ -75,6 +89,7 @@ const Register = () => {
             onChange={({ target }) => setAge(target.value)}
           />
         </div>
+
         <div>
           Пол
           <select
