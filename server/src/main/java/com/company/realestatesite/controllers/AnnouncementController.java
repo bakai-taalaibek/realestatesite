@@ -38,6 +38,7 @@ public class AnnouncementController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
         }
     }
+
     @GetMapping("/find/all")
     @ApiOperation("Вывод всех объявлений")
     ResponseEntity<List<AnnouncementDto>> findAll() {

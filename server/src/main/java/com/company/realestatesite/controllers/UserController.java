@@ -28,6 +28,7 @@ public class UserController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
         }
     }
+
     @GetMapping("/find/all")
     @ApiOperation("Вывод всех пользователей")
     ResponseEntity<List<UserDto>> findAll() {

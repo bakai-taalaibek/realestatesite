@@ -7,7 +7,6 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Getter
 @Setter
@@ -16,7 +15,7 @@ import java.util.List;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 @Table(name = "tb_announcement")
-public class Announcement extends BaseEntity{
+public class Announcement extends BaseEntity {
 
     @Column(name = "title")
     @NotNull()

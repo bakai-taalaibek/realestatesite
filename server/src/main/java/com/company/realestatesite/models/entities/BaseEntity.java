@@ -31,12 +31,13 @@ public class BaseEntity {
 
     @PrePersist
     protected void onCreate() {
-        created=new Date();
-        updated=new Date();
+        created = new Date();
+        updated = new Date();
         status = Status.ACTIVE;
     }
+
     @PreUpdate
-    protected void onUpdate(){
+    protected void onUpdate() {
         updated = new Date();
     }
 }

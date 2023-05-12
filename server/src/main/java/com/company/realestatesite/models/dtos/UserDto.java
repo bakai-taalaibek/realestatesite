@@ -14,7 +14,7 @@ import java.util.List;
 @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserDto extends BaseDto{
+public class UserDto extends BaseDto {
     String username;
     String email;
     String password;

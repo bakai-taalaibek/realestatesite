@@ -1,9 +1,8 @@
 package com.company.realestatesite.security.jwt;
 
 import com.company.realestatesite.models.entities.Role;
-
-import lombok.RequiredArgsConstructor;
 import io.jsonwebtoken.*;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;

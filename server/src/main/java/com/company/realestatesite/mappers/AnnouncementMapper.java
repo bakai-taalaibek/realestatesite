@@ -13,7 +13,10 @@ public interface AnnouncementMapper {
     AnnouncementMapper INSTANCE = Mappers.getMapper(AnnouncementMapper.class);
 
     Announcement toEntity(AnnouncementDto dto);
+
     AnnouncementDto toDto(Announcement entity);
+
     List<Announcement> toEntities(List<AnnouncementDto> dtoList);
-    List<AnnouncementDto> toDtos (List<Announcement> entityList);
+
+    List<AnnouncementDto> toDtos(List<Announcement> entityList);
 }
