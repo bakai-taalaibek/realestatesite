@@ -37,7 +37,7 @@ public class AnnouncementServiceImpl implements AnnouncementService{
     @Override
     public AnnouncementDto update(AnnouncementDto dto) {
         Announcement announcement = announcementRepository.findById(dto.getId())
-                .orElseThrow(()->new RuntimeException("Habit is not found"));
+                .orElseThrow(()->new RuntimeException("Announcement is not found"));
         announcement.setTitle(dto.getTitle());
         announcement.setDescription(dto.getDescription());
         announcement.setPrice(dto.getPrice());
@@ -54,7 +54,7 @@ public class AnnouncementServiceImpl implements AnnouncementService{
     @Override
     public AnnouncementDto delete(Long id) {
         AnnouncementDto announcementDto = announcementMapper.toDto(announcementRepository.findById(id)
-                .orElseThrow(()->new RuntimeException("Habit is not found")));
+                .orElseThrow(()->new RuntimeException("Announcement is not found")));
         announcementDto.setStatus(Status.DELETED);
         return save(announcementDto);
     }

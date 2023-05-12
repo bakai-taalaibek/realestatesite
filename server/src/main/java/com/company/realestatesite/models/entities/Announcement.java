@@ -1,5 +1,7 @@
 package com.company.realestatesite.models.entities;
 
+import com.company.realestatesite.models.enums.Offer;
+import com.company.realestatesite.models.enums.Type;
 import com.sun.istack.NotNull;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -18,43 +20,39 @@ public class Announcement extends BaseEntity{
 
     @Column(name = "title")
     @NotNull()
-    private String title;
+    String title;
 
     @Column(name = "description")
     @NotNull()
-    private String description;
+    String description;
 
     @Column(name = "price")
     @NotNull()
-    private Integer price;
+    Integer price;
 
     @Column(name = "type")
-    @NotNull()
-    private String type;
+    @Enumerated(EnumType.STRING)
+    Type type;
 
     @Column(name = "offer")
-    @NotNull()
-    private String offer;
+    @Enumerated(EnumType.STRING)
+    Offer offer;
 
     @Column(name = "area")
     @NotNull()
-    private Integer area;
+    Integer area;
 
     @Column(name = "rooms")
     @NotNull()
-    private Integer rooms;
+    Integer rooms;
 
     @Column(name = "city")
     @NotNull()
-    private String city;
+    String city;
 
     @Column(name = "address")
     @NotNull()
-    private String address;
-
-    /*@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "user_id", nullable = false)
-    private List<User> user;*/
+    String address;
     @ManyToOne
-    private User user;
+    User user;
 }

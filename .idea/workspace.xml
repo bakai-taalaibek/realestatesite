@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0913fade-d689-4e9f-b728-93ad0cc18fa4" name="Changes" comment="Изменения Branch - Taalai &#10;&#10;1) Добавил Spring Security">
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/config/Swagger.java" afterDir="false" />
+    <list default="true" id="0913fade-d689-4e9f-b728-93ad0cc18fa4" name="Changes" comment="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger">
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/enums/Offer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/enums/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/mappers/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/mappers/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/dtos/AnnouncementDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/dtos/AnnouncementDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/Announcement.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/models/entities/Announcement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/services/impl/AnnouncementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/services/impl/AnnouncementServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/AnnouncementMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/AnnouncementMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/UserMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -134,7 +137,7 @@
       <updated>1683637171138</updated>
       <workItem from="1683637172711" duration="3058000" />
       <workItem from="1683888052215" duration="4550000" />
-      <workItem from="1683892642893" duration="1876000" />
+      <workItem from="1683892642893" duration="3344000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил Сущности пользователя(User) и объявления(Announcement), а также CRUD к этим сущностям. По началу добавил файл data.sql по началу всё работало хорошо, но потом что-то вместе с файлом не запускается проект без него всё работает хорошо. В файле скрипты для заполнения бд.">
       <created>1683640085691</created>
@@ -164,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683894652198</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger">
+      <created>1683895370387</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683895370387</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +196,7 @@
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Поменял com.example на com.company&#10;2) В таблице User добавил поле Gender&#10;3) Добавил enum Gender (Male, Female)&#10;4) Добавил зависимости JWT Token&#10;5) Server-port 3001&#10;6) Названия базы поменял на db_realestate&#10;7) Не забудьте поменять пароль от PostgreSQL" />
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Исправил таблицу Announcement, поменял List&lt;User&gt; на User" />
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Добавил Spring Security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) Добавил Spring Security" />
+    <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger" />
   </component>
 </project>

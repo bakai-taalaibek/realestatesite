@@ -1,7 +1,6 @@
 package com.company.realestatesite.mappers;
 
 import com.company.realestatesite.models.dtos.UserDto;
-import com.company.realestatesite.models.entities.Role;
 import com.company.realestatesite.models.entities.User;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +8,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-05-12T18:40:23+0600",
+    date = "2023-05-12T18:47:29+0600",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 11.0.18 (Eclipse Adoptium)"
 )
 public class UserMapperImpl implements UserMapper {
@@ -22,20 +21,6 @@ public class UserMapperImpl implements UserMapper {
 
         User user = new User();
 
-        user.setId( dto.getId() );
-        user.setCreated( dto.getCreated() );
-        user.setUpdated( dto.getUpdated() );
-        user.setStatus( dto.getStatus() );
-        user.setUsername( dto.getUsername() );
-        user.setEmail( dto.getEmail() );
-        user.setPassword( dto.getPassword() );
-        user.setGender( dto.getGender() );
-        user.setAge( dto.getAge() );
-        List<Role> list = dto.getRoles();
-        if ( list != null ) {
-            user.setRoles( new ArrayList<Role>( list ) );
-        }
-
         return user;
     }
 
@@ -46,20 +31,6 @@ public class UserMapperImpl implements UserMapper {
         }
 
         UserDto userDto = new UserDto();
-
-        userDto.setId( entity.getId() );
-        userDto.setCreated( entity.getCreated() );
-        userDto.setUpdated( entity.getUpdated() );
-        userDto.setStatus( entity.getStatus() );
-        userDto.setUsername( entity.getUsername() );
-        userDto.setEmail( entity.getEmail() );
-        userDto.setPassword( entity.getPassword() );
-        userDto.setGender( entity.getGender() );
-        userDto.setAge( entity.getAge() );
-        List<Role> list = entity.getRoles();
-        if ( list != null ) {
-            userDto.setRoles( new ArrayList<Role>( list ) );
-        }
 
         return userDto;
     }
