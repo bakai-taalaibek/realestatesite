@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0913fade-d689-4e9f-b728-93ad0cc18fa4" name="Changes" comment="Изменения Branch - Taalai &#10;&#10;1) Исправлены стили и отображение кода">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AnnouncementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AnnouncementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Taalai" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,6 +140,7 @@
       <workItem from="1683892642893" duration="3344000" />
       <workItem from="1683898380587" duration="1782000" />
       <workItem from="1683900175195" duration="621000" />
+      <workItem from="1683901986380" duration="966000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил Сущности пользователя(User) и объявления(Announcement), а также CRUD к этим сущностям. По началу добавил файл data.sql по началу всё работало хорошо, но потом что-то вместе с файлом не запускается проект без него всё работает хорошо. В файле скрипты для заполнения бд.">
       <created>1683640085691</created>
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683895370387</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Изменения Branch - Taalai &#10;&#10;1) Добавил Cros в контроллеры">
+      <created>1683902172547</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683902172547</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +207,7 @@
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Исправил таблицу Announcement, поменял List&lt;User&gt; на User" />
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Добавил Spring Security" />
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger" />
+    <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Добавил Cros в контроллеры" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) Добавил Cros в контроллеры" />
   </component>
 </project>
