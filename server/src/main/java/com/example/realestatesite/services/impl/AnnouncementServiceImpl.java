@@ -47,7 +47,6 @@ public class AnnouncementServiceImpl implements AnnouncementService{
         announcement.setRooms(dto.getRooms());
         announcement.setCity(dto.getCity());
         announcement.setAddress(dto.getAddress());
-        announcement.setUser(dto.getUser());
         return announcementMapper.toDto(announcementRepository.save(announcement));
     }
 

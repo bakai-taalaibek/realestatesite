@@ -51,8 +51,4 @@ public class Announcement extends BaseEntity{
     @Column(name = "address")
     @NotNull()
     private String address;
-
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "user_id", nullable = false)
-    private List<User> user;
 }
