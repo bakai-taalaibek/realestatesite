@@ -5,10 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0913fade-d689-4e9f-b728-93ad0cc18fa4" name="Changes" comment="Изменения Branch - Taalai &#10;&#10;1) Исправлены стили и отображение кода">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AnnouncementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AnnouncementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/config/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/config/Swagger.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/config/Swagger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/controllers/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/controllers/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/mappers/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/mappers/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/mappers/UserMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/mappers/UserMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/dtos/BaseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/dtos/BaseDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/dtos/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/dtos/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/entities/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/entities/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/entities/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/entities/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/enums/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/enums/Gender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/enums/Offer.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/enums/Offer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/enums/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/enums/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/enums/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/models/enums/Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/realestatesiteApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/realestatesiteApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/repository/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/repository/RoleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/JwtUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/JwtUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtAuthenticationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtAuthenticationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtConfigurer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtTokenFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtTokenFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtTokenProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtUserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/jwt/JwtUserFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/securityDto/AuthenticationRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/securityDto/AuthenticationRequestDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/securityDto/AuthenticationResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/security/securityDto/AuthenticationResponseDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/services/impl/AnnouncementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/services/impl/AnnouncementServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/services/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/company/realestatesite/services/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/generated-sources/annotations/com/company/realestatesite/mappers/UserMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,33 +90,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Comp/IdeaProjects/3_github/realestatesite&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2b166011bb1f179d7d63c54f29f373d6&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Comp/IdeaProjects/3_github/realestatesite",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "service.view.auto.scroll.to.source": "true",
+    "spring.configuration.checksum": "2b166011bb1f179d7d63c54f29f373d6",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
-      &quot;PostgreSQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\IdeaProjects\realestatesite\server\src\main\java\com\example\realestatesite\mappers" />
@@ -177,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683895370387</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Изменения Branch - Taalai &#10;&#10;1) Настройки Cross">
+      <created>1683904656505</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683904656505</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Изменения Branch - Taalai &#10;&#10;1) Исправлены стили и отображение кода">
+      <created>1683904684126</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683904684126</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +249,7 @@
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Добавил Spring Security" />
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Подключил Swagger" />
     <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Настройки Cross" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) Настройки Cross" />
+    <MESSAGE value="Изменения Branch - Taalai &#10;&#10;1) Исправлены стили и отображение кода" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения Branch - Taalai &#10;&#10;1) Исправлены стили и отображение кода" />
   </component>
 </project>

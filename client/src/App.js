@@ -3,14 +3,14 @@ import { Outlet } from "react-router-dom";
  
 function App() {
   return (
-    <div >
+    < >
       <Header/>
       <body className={ body }>
         <div className={ contentArea }>
           <Outlet />
         </div>
       </body>
-    </div>
+    </>
   );
 }
 
