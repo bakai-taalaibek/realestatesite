@@ -15,6 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/api/v1/announcement")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class AnnouncementController {
 
     private final AnnouncementService announcementService;
