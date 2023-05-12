@@ -1,14 +1,14 @@
-----tb_users----------------------------------------------------------------------------------------------------------
-insert into realestatesite.tb_user(created, status, updated, age, email, password, username)
-VALUES (current_timestamp, 'ACTIVE', current_timestamp, 25, 'toktievabdyvali@gmail.com', '$2a$12$r1J2WKkWpPpOz1NPxKRfLuUj297YLCyBi5vEpGFN6LXv.HwoHNB2.', 'Abduvali');
-
-insert into realestatesite.tb_user(created, status, updated, age, email, password, username)
-VALUES (current_timestamp, 'ACTIVE', current_timestamp, 22, 'testtestovvv7@gmail.com', '$2a$12$he802xXTcL9nmZfBCtFCweY/fDuJ8JV9N8tpANWjKNZggZWxwLXAy', 'Test');
-
 ----tb_role-----------------------------------------------------------------------------------------------------------
-insert into realestatesite.tb_role (status, name) VALUES ('ACTIVE', 'ROLE_ADMIN');
-insert into realestatesite.tb_role (status, name) VALUES ('ACTIVE', 'ROLE_USER');
+insert into tb_role (status, name) VALUES ('ACTIVE', 'ROLE_ADMIN');
+insert into tb_role (status, name) VALUES ('ACTIVE', 'ROLE_USER');
+
+----tb_users----------------------------------------------------------------------------------------------------------
+insert into tb_user(created,status,updated,age, email, gender, password, username)
+VALUES ('2023-04-19 02:28:38.593', 'ACTIVE', '2023-04-19 02:28:38.593', 29, 'mirbek@gmail.com','MALE', '$2a$04$D4lt18K/P3amgzfb2FGAm.6UEMj2hVE3YWVtbuaCBRTU0g4lMTz3i', 'mirbek');
+
+insert into tb_user(created,status,updated,age, email, gender, password, username)
+VALUES ('2023-04-19 02:28:38.593', 'ACTIVE', '2023-04-19 02:28:38.593', 27, 'springboot1212@gmail.com','MALE', '$2a$10$DCj6yq2S9VHM5gS7p3ZRJ.fBCcjl7e4YHzYIodwwFic3IKR6EwpT2', 'ermek');
 
 ----tb_user_roles-----------------------------------------------------------------------------------------------------
-insert into realestatesite.tb_user_roles(user_id,role_id)VALUES (1,1);
-insert into realestatesite.tb_user_roles(user_id,role_id)VALUES (2,2);
+insert into tb_user_roles(user_id,role_id)VALUES (1,1);
+insert into tb_user_roles(user_id,role_id)VALUES (2,2);
