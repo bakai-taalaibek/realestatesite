@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = '/api/register'
+const baseUrl = 'http://localhost:3001/api/v1/auth/register'
 
 const register = async credentials => {
   const response = await axios.post(baseUrl, credentials)
@@ -7,3 +7,4 @@ const register = async credentials => {
 }
 
 export default register
+
