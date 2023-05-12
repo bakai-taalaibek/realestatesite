@@ -5,13 +5,16 @@ import adService from '../services/ads'
 const Register = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('')
+  const [gender, setGender] = useState('MALE')
+  const [age, setAge] = useState('')
   const [user, setUser] = useState(null)
 
   const handleLogin = async (event) => {
     event.preventDefault()
     try {
       const user = await register({
-        username, password,
+        username, password, email, gender, age
       })
       setUser(user)
       setUsername('')
@@ -51,6 +54,39 @@ const Register = () => {
             name='Password'
             onChange={({ target }) => setPassword(target.value)}
           />
+        </div>
+        <div>
+          Email
+          <input 
+            className={ formField }
+            type='text'
+            value={ email }
+            name='Email'
+            onChange={({ target }) => setEmail(target.value)}
+          />
+        </div>
+        <div>
+          Age
+          <input 
+            className={ formField }
+            type='number'
+            value={ age }
+            name='age'
+            onChange={({ target }) => setAge(target.value)}
+          />
+        </div>
+        <div>
+          Пол
+          <select
+            className={ formField }
+            value={ gender }
+            onChange={({ target }) =>
+              setGender(target.value)
+            }
+          >
+            <option value="MALE">Мужчина</option>
+            <option value="FEMALE">Женщина</option>
+          </select>
         </div>
         <button className={ button } type='submit'>Зарегистрироваться</button>
       </form>
