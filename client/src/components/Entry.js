@@ -4,7 +4,7 @@ import Login from './Login'
 import { useUser } from '../utilities/zustand'
 import { useNavigate } from 'react-router-dom'
 
-export const Authentification = () => {
+export const Entry = () => {
   const [registrationBool, setRegistrationBool] = useState(true)
   const { user } = useUser()
   const navigate = useNavigate()

@@ -1,8 +1,9 @@
-import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
+import { createBrowserRouter } from "react-router-dom"
+import App from "../App"
 import ErrorPage from '../components/ErrorPage'
-import AdsList from "../components/AdsList";
-import { Authentification } from "../components/Authentification";
+import AdsList from "../components/AdsList"
+import { Entry } from "../components/Entry"
+import { Profile } from "../components/Profile"
 
 export const router = createBrowserRouter([
   {
@@ -15,8 +16,12 @@ export const router = createBrowserRouter([
         element: <AdsList />,
       },
       {
-        path: 'authentification',
-        element: <Authentification />,
+        path: 'entry',
+        element: <Entry />,
+      },
+      {
+        path: 'profile',
+        element: <Profile />,
       },
     ],
   },
