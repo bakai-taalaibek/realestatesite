@@ -7,6 +7,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -52,6 +53,6 @@ public class Announcement extends BaseEntity {
     @Column(name = "address")
     @NotNull()
     String address;
-    @ManyToOne
-    User user;
+//    @ManyToOne
+//    User user;
 }
