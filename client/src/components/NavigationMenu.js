@@ -9,14 +9,9 @@ const NavigationMenu = () => {
         Главная
       </NavLink>
       <NavLink 
-        to="login"
+        to="authentification"
         className={ ({ isActive }) => isActive ? activeNavButton : passiveNavButton } >
-        Логин
-      </NavLink>
-      <NavLink 
-        to="register"
-        className={ ({ isActive }) => isActive ? activeNavButton : passiveNavButton } >
-        Регистрация
+        Войти
       </NavLink>
     </div>
   )

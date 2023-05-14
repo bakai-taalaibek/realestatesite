@@ -42,9 +42,6 @@ const Register = () => {
 
   return (
     <div id='superid' className='ml-1 font-serif text-slate-800 '>
-      <h2 >
-        Зарегистрироваться
-      </h2>
       <form onSubmit={ handleRegistration }>
         <div>
           Логин
