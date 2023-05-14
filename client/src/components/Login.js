@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import loginService from '../services/login'
 import adService from '../services/ads'
+import { useUser } from '../utilities/zustand'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
-  const [user, setUser] = useState(null)
+  const { setUser } = useUser()
+  const navigate = useNavigate()
 
   const handleLogin = async (event) => {
     event.preventDefault()
@@ -20,6 +23,7 @@ const Login = () => {
       window.localStorage.setItem(
         'loggedUser', JSON.stringify(user)
       )
+      navigate('')
     }
     catch (exeption) {
       console.log('Error while trying to log in')

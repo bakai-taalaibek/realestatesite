@@ -1,15 +1,29 @@
 import Header from './components/Header'
 import { Outlet } from "react-router-dom";
+import { useEffect } from 'react';
+import { useUser } from './utilities/zustand'
+import adService from './services/ads';
  
 function App() {
+  const { setUser } = useUser()
+
+  useEffect(() => {    
+    const loggedUserJSON = window.localStorage.getItem('loggedUser')    
+    if (loggedUserJSON) {      
+      const storedUser = JSON.parse(loggedUserJSON)      
+      setUser(storedUser)      
+      adService.setToken(storedUser.token)    
+    }  
+  }, [])
+
   return (
     < >
       <Header/>
-      <body className={ body }>
+      <div className={ body }>
         <div className={ contentArea }>
           <Outlet />
         </div>
-      </body>
+      </div>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = '/api/ads'
+const baseUrl = 'http://localhost:3001/api/v1/auth/authentication/api/v1/announcement/find/all'
 
 let token = null
 

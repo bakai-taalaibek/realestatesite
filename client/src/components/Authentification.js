@@ -1,9 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Register from './Register'
 import Login from './Login'
+import { useUser } from '../utilities/zustand'
+import { useNavigate } from 'react-router-dom'
 
 export const Authentification = () => {
   const [registrationBool, setRegistrationBool] = useState(true)
+  const { user } = useUser()
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (user) {  
+      navigate('/')
+    }
+  }, [])
 
   return (
     <div class={ mainContainer }>

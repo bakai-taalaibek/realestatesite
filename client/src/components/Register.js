@@ -2,6 +2,8 @@ import { useState } from 'react'
 import register from '../services/register'
 import adService from '../services/ads'
 import loginService from '../services/login'
+import { useUser } from '../utilities/zustand'
+import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
   const [username, setUsername] = useState('')
@@ -9,12 +11,13 @@ const Register = () => {
   const [email, setEmail] = useState('')
   const [gender, setGender] = useState('MALE')
   const [age, setAge] = useState('')
-  const [user, setUser] = useState(null)
+  const { setUser } = useUser()
+  const navigate = useNavigate()
 
   const handleRegistration = async (event) => {
     event.preventDefault()
     try {
-      const registrationSuccess = await register({
+      await register({
         username, password, email, gender, age
       })
 
@@ -29,6 +32,7 @@ const Register = () => {
         window.localStorage.setItem(
           'loggedUser', JSON.stringify(user)
         )
+        navigate('')
       }
       catch (exeption) {
         console.log('Error while trying to log in')
