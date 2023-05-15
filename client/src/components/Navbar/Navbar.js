@@ -10,11 +10,21 @@ const Navbar = () => {
     navigate("/entry");
   }
 
+  const navigate2 = useNavigate();
+  function logoClick() {
+    navigate2("/");
+  }
+
   return (
     <div className="bg-white p-5">
       <nav className="flex justify-between items-center w-[92%] mx-auto">
         <div>
-          <img className="cursor-pointer" src={Logo} alt="logo" />
+          <img
+            className="cursor-pointer"
+            src={Logo}
+            alt="logo"
+            onClick={logoClick}
+          />
         </div>
         <div className="">
           <ul className="font-[400] flex items-center gap-[4vw] text-[22px] leading-[35px] normal">

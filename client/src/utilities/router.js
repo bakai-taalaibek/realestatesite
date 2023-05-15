@@ -2,9 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import ErrorPage from "../components/ErrorPage";
 import AdsList from "../components/AdsList";
-import { Entry } from "../components/Entry";
+// import { Entry } from "../components/Entry";
 import { Profile } from "../components/Profile";
 import Register from "../components/Auth/Register/Register";
+// import Login from "../components/Auth/Login/Login";
 
 export const router = createBrowserRouter([
   {
@@ -18,15 +19,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "entry",
-        element: <Entry />,
+        element: <Register />,
       },
       {
         path: "profile",
         element: <Profile />,
-      },
-      {
-        path: "auth",
-        element: <Register />,
       },
     ],
   },
