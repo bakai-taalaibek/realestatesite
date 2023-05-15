@@ -1,10 +1,13 @@
 package com.company.realestatesite.services.impl;
 
 import com.company.realestatesite.mappers.AnnouncementMapper;
+import com.company.realestatesite.mappers.UserMapper;
 import com.company.realestatesite.models.dtos.AnnouncementDto;
 import com.company.realestatesite.models.entities.Announcement;
+import com.company.realestatesite.models.entities.User;
 import com.company.realestatesite.models.enums.Status;
 import com.company.realestatesite.repository.AnnouncementRepository;
+import com.company.realestatesite.repository.UserRepository;
 import com.company.realestatesite.services.AnnouncementService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,7 +19,9 @@ import java.util.List;
 public class AnnouncementServiceImpl implements AnnouncementService {
 
     private final AnnouncementRepository announcementRepository;
+    private final UserRepository userRepository;
     private AnnouncementMapper announcementMapper = AnnouncementMapper.INSTANCE;
+    private UserMapper userMapper = UserMapper.INSTANCE.INSTANCE;
 
     @Override
     public AnnouncementDto save(AnnouncementDto dto) {
@@ -48,6 +53,11 @@ public class AnnouncementServiceImpl implements AnnouncementService {
         announcement.setCity(dto.getCity());
         announcement.setAddress(dto.getAddress());
         return announcementMapper.toDto(announcementRepository.save(announcement));
+    }
+
+    @Override
+    public List<AnnouncementDto> findAllByUserId(Long userId) {
+        return announcementMapper.toDtos(announcementRepository.findAllByUserId(userId));
     }
 
     @Override

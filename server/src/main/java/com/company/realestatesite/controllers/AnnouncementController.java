@@ -56,4 +56,10 @@ public class AnnouncementController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
         }
     }
+
+    @GetMapping("/find/all/byUser")
+    @ApiOperation("Вывод всех объявлений по конкретному пользователю")
+    ResponseEntity<List<AnnouncementDto>> findAllByUser(@RequestParam Long userId) {
+        return ResponseEntity.ok(announcementService.findAllByUserId(userId));
+    }
 }

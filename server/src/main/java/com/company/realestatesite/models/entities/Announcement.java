@@ -53,6 +53,7 @@ public class Announcement extends BaseEntity {
     @Column(name = "address")
     @NotNull()
     String address;
-//    @ManyToOne
-//    User user;
+
+    @ManyToOne
+    User user;
 }

@@ -18,4 +18,6 @@ public interface UserService {
     User findById(Long id);
 
     void delete(Long id);
+
+    UserDto update(UserDto dto);
 }
