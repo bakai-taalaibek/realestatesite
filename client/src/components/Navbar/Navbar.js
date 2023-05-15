@@ -11,7 +11,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="bg-white m-10">
+    <div className="bg-white p-5">
       <nav className="flex justify-between items-center w-[92%] mx-auto">
         <div>
           <img className="cursor-pointer" src={Logo} alt="logo" />
