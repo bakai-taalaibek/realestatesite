@@ -3,7 +3,7 @@ import human from "../assets/human.png";
 
 const Register = () => {
   return (
-    <div className="flex justify-evenly ">
+    <div className="flex justify-evenly pb-72 pt-10 ">
       <div className="w-1/2 py-16 px-12">
         <h2 className="font-bold text-[40px]">Регистрация</h2>
         <p className="mt-2 mb-10 text-[#828282] font-500 text-[20px]">

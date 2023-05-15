@@ -16,15 +16,10 @@ const Navbar = () => {
   }
 
   return (
-    <div className="bg-white p-5">
+    <div className="bg-white p-10">
       <nav className="flex justify-between items-center w-[92%] mx-auto">
         <div>
-          <img
-            className="cursor-pointer"
-            src={Logo}
-            alt="logo"
-            onClick={logoClick}
-          />
+          <img className="cursor-pointer" src={Logo} alt="logo" />
         </div>
         <div className="">
           <ul className="font-[400] flex items-center gap-[4vw] text-[22px] leading-[35px] normal">
