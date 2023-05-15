@@ -17,10 +17,8 @@ const Ad = ({ title, price, description, city, address, type, offer, area, rooms
 }
 
 const AdsList = () => {
-  const adsList = adService.getAll()
-  console.log(adsList)
-
-
+  // const adsList = adService.getAll()
+  // console.log(adsList)
 
   return (
     <div className='flex flex-col justify-center items-center' >

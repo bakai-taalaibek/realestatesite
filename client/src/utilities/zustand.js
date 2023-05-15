@@ -6,4 +6,10 @@ export const useUser = create((set) => ({
 		set({ user: newUser })
 	},
 }));
-  
+
+export const useExitButton = create((set) => ({
+	exitButtonBool: false,
+	setExitButtonBool: (newState) => {
+		set({ exitButtonBool: newState})
+	}
+}))

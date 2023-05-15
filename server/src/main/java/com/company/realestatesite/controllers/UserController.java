@@ -46,4 +46,14 @@ public class UserController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
         }
     }
+
+    @PutMapping("/update")
+    @ApiOperation("Изменить данные пользователя")
+    ResponseEntity<?> update(@RequestBody UserDto userDto){
+        try {
+            return new ResponseEntity<>(userService.update(userDto), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
+        }
+    }
 }

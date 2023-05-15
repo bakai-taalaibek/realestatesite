@@ -32,7 +32,7 @@ const Register = () => {
         window.localStorage.setItem(
           'loggedUser', JSON.stringify(user)
         )
-        navigate('')
+        navigate('/')
       }
       catch (exeption) {
         console.log('Error while trying to log in')
