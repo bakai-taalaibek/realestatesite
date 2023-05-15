@@ -1,27 +1,32 @@
-import { createBrowserRouter } from "react-router-dom"
-import App from "../App"
-import ErrorPage from '../components/ErrorPage'
-import AdsList from "../components/AdsList"
-import { Entry } from "../components/Entry"
-import { Profile } from "../components/Profile"
+import { createBrowserRouter } from "react-router-dom";
+import App from "../App";
+import ErrorPage from "../components/ErrorPage";
+import AdsList from "../components/AdsList";
+import { Entry } from "../components/Entry";
+import { Profile } from "../components/Profile";
+import Register from "../components/Auth/Register/Register";
 
 export const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '',
+        path: "",
         element: <AdsList />,
       },
       {
-        path: 'entry',
+        path: "entry",
         element: <Entry />,
       },
       {
-        path: 'profile',
+        path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "auth",
+        element: <Register />,
       },
     ],
   },
