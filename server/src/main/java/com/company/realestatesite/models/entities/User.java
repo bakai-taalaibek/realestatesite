@@ -34,9 +34,9 @@ public class User extends BaseEntity {
     @Column(name = "gender")
     Gender gender;
 
-    @Column(name = "age")
+    @Column(name = "year_of_birth")
     @NotNull()
-    int age;
+    int yearOfBirth;
 
     @JsonIgnore
     @ManyToMany(fetch = FetchType.EAGER)

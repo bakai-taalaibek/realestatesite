@@ -19,6 +19,6 @@ public class UserDto extends BaseDto {
     String email;
     String password;
     Gender gender;
-    int age;
+    int yearOfBirth;
     List<Role> roles;
 }
