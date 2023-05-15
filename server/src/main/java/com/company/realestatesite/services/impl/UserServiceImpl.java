@@ -54,6 +54,21 @@ public class UserServiceImpl implements UserService {
         userRepository.deleteById(id);
     }
 
+    @Override
+    public UserDto update(UserDto dto) {
+        try {
+        User user = userRepository.findByUsername(dto.getUsername());
+        user.setEmail(dto.getEmail());
+        user.setUsername(dto.getUsername());
+        user.setPassword(dto.getPassword());
+        user.setGender(dto.getGender());
+        user.setAge(dto.getAge());
+        return userMapper.toDto(userRepository.save(user));
+        } catch (Exception e) {
+            throw new RuntimeException("User not found");
+        }
+    }
+
     private User toEntity(UserDto userDto) {
 
 

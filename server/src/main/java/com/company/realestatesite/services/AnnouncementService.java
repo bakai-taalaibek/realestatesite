@@ -16,4 +16,5 @@ public interface AnnouncementService {
 
     AnnouncementDto update(AnnouncementDto announcementDto);
 
+    List<AnnouncementDto> findAllByUserId(Long userId);
 }
