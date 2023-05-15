@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   function handleClick() {
-    navigate("/auth");
+    navigate("/entry");
   }
 
   return (

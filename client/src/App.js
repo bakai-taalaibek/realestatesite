@@ -1,5 +1,5 @@
 // import Header from "./components/Header";
-// import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import { useUser } from "./utilities/zustand";
 import adService from "./services/ads";
@@ -21,12 +21,12 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Header />
+      {/* <Header /> */}
       <div className={body}>
         <div className={contentArea}>
           <Outlet />
         </div>
-      </div> */}
+      </div>
       <Register />
     </>
   );
