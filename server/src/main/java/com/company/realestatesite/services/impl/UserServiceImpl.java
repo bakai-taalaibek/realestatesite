@@ -62,7 +62,7 @@ public class UserServiceImpl implements UserService {
         user.setUsername(dto.getUsername());
         user.setPassword(dto.getPassword());
         user.setGender(dto.getGender());
-        user.setAge(dto.getAge());
+        user.setYearOfBirth(dto.getYearOfBirth());
         return userMapper.toDto(userRepository.save(user));
         } catch (Exception e) {
             throw new RuntimeException("User not found");
@@ -79,7 +79,7 @@ public class UserServiceImpl implements UserService {
         User user = new User();
         user.setUsername(userDto.getUsername());
         user.setEmail(userDto.getEmail());
-        user.setAge(userDto.getAge());
+        user.setYearOfBirth(userDto.getYearOfBirth());
         user.setGender(userDto.getGender());
         user.setPassword(passwordEncoder.encode(userDto.getPassword()));
         user.setRoles(userRoles);

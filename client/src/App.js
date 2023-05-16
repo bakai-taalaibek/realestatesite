@@ -1,29 +1,33 @@
-import Header from './components/Header'
+// import Header from "./components/Header";
 import { Outlet } from "react-router-dom";
-import { useEffect } from 'react';
-import { useUser } from './utilities/zustand'
-import adService from './services/ads';
- 
-function App() {
-  const { setUser } = useUser()
+import { useEffect } from "react";
+import { useUser } from "./utilities/zustand";
+import adService from "./services/ads";
+import Navbar from "./components/Navbar/Navbar";
+import Register from "./components/Auth/Register/Register";
 
-  useEffect(() => {    
-    const loggedUserJSON = window.localStorage.getItem('loggedUser')    
-    if (loggedUserJSON) {      
-      const storedUser = JSON.parse(loggedUserJSON)      
-      setUser(storedUser)      
-      adService.setToken(storedUser.token)    
-    }  
-  }, [])
+function App() {
+  const { setUser } = useUser();
+
+  useEffect(() => {
+    const loggedUserJSON = window.localStorage.getItem("loggedUser");
+    if (loggedUserJSON) {
+      const storedUser = JSON.parse(loggedUserJSON);
+      setUser(storedUser);
+      adService.setToken(storedUser.token);
+    }
+  }, []);
 
   return (
-    < >
-      <Header/>
-      <div className={ body }>
-        <div className={ contentArea }>
+    <>
+      <Navbar />
+      {/* <Header /> */}
+      <div className={body}>
+        <div className={contentArea}>
           <Outlet />
         </div>
       </div>
+      <Register />
     </>
   );
 }

@@ -40,8 +40,15 @@ public class AuthenticationController {
             String token = jwtTokenProvider.createToken(username, user.getRoles());
 
             AuthenticationResponseDto responseDto = new AuthenticationResponseDto();
-            responseDto.setUsername(username);
             responseDto.setToken(token);
+            responseDto.setId(user.getId());
+            responseDto.setUsername(username);
+            responseDto.setEmail(user.getEmail());
+            responseDto.setGender(user.getGender());
+            responseDto.setYearOfBirth(user.getYearOfBirth());
+            responseDto.setRoles(user.getRoles());
+
+
 
             return ResponseEntity.ok(responseDto);
         } catch (AuthenticationException e) {
