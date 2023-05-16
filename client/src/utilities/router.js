@@ -5,7 +5,6 @@ import AdsList from "../components/AdsList";
 // import { Entry } from "../components/Entry";
 import { Profile } from "../components/Profile";
 import Register from "../components/Auth/Register/Register";
-import Login from "../components/Auth/Login/Login";
 // import Login from "../components/Auth/Login/Login";
 
 export const router = createBrowserRouter([
@@ -20,7 +19,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "entry",
-        element: <Login />,
+        element: <Register />,
       },
       {
         path: "profile",
