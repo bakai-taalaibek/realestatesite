@@ -1,0 +1,13 @@
+Index: .idea/workspace.xml
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -48,6 +48,7 @@
+   <component name="MavenImportPreferences">
+     <option name="generalSettings">
+       <MavenGeneralSettings>
++        <option name="mavenHome" value="Use Maven wrapper" />
+         <option name="useMavenConfig" value="true" />
+       </MavenGeneralSettings>
+     </option>
