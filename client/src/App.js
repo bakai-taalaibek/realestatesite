@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useUser } from "./utilities/zustand";
 import adService from "./services/ads";
 import Navbar from "./components/Navbar/Navbar";
+import Error from "./components/Error/Error";
 
 function App() {
   const { setUser } = useUser();
@@ -26,6 +27,7 @@ function App() {
       <Outlet />
       {/* </div>
       </div> */}
+      {/* <Error /> */}
     </>
   );
 }
