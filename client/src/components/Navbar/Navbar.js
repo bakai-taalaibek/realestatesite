@@ -3,6 +3,7 @@ import React from "react";
 import Logo from "./assets/logo.png";
 import User from "./assets/user.svg";
 import { useNavigate } from "react-router-dom";
+import "./nav.css"
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ const Navbar = () => {
   }
 
   return (
+    <div className="container">
     <div className="bg-white m-10">
       <nav className="flex justify-between items-center w-[92%] mx-auto">
         <div>
@@ -52,6 +54,7 @@ const Navbar = () => {
         </div>
       </nav>
     </div>
+</div>
   );
 };
 
