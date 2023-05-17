@@ -13,3 +13,6 @@ export const useExitButton = create((set) => ({
 		set({ exitButtonBool: newState})
 	}
 }))
+
+//export const baseUrl = ''
+export const baseUrl = 'http://localhost:8080'
