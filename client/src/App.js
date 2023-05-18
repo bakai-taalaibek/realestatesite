@@ -5,6 +5,12 @@ import { useUser } from "./utilities/zustand";
 import adService from "./services/ads";
 import Navbar from "./components/Navbar/Navbar";
 import Register from "./components/Auth/Register/Register";
+import TopSection from "./components/Top/TopSection";
+import Popular from "./components/Popular/Popular";
+import Near from "./components/Near/Near";
+import Rent from "./components/Rent/Rent";
+import Footer from "./components/Footer/Footer";
+import Card from "./components/Card/Card";
 
 function App() {
   const { setUser } = useUser();
@@ -21,13 +27,18 @@ function App() {
   return (
     <>
       <Navbar />
+      <TopSection />
+      <Popular />
+      <Near />
+      <Rent />
+        <Footer />
       {/* <Header /> */}
-      <div className={body}>
-        <div className={contentArea}>
-          <Outlet />
-        </div>
-      </div>
-      <Register />
+      {/*<div className={body}>*/}
+      {/*  <div className={contentArea}>*/}
+      {/*    <Outlet />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
+      {/*<Register />*/}
     </>
   );
 }

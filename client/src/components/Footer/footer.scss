@@ -1,0 +1,65 @@
+.footer{
+  padding: 10rem 0 .8rem;
+  background-color: #153B86;
+  &__row{
+	display: flex;
+	column-gap: 12.1rem;
+	align-items: center;
+	margin-bottom: 8rem;
+  }
+  &__logo{
+	width: 20rem;
+  }
+  &__menu{
+	display: flex;
+	column-gap: 17rem;
+	row-gap: 1.2rem;
+	align-items: center;
+  }
+  &__list{
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.2rem;
+  }
+  &__link{
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 2.9rem;
+	color: white;
+	transition: all .3s ease-in-out;
+	&:hover{
+	  color: #F88906;
+	  transition: all .3s ease-in-out;
+	}
+  }
+  &__social{
+	display: flex;
+	column-gap: 3.6rem;
+	align-items: center;
+	justify-content: center;
+	color: #FFFCFC;;
+	margin-bottom: .7rem;
+	&-insta p, &-telegram p{
+	  font-weight: 400;
+	  font-size: 1.6rem;
+	  line-height: 2.3rem;
+	}
+	&-insta{
+	  display: flex;
+	  align-items: center;
+	  column-gap: 1.2rem;
+	}
+	&-telegram{
+	  display: flex;
+	  align-items: center;
+	  column-gap: 1.2rem;
+	}
+  }
+  &__copy p{
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 2.3rem;
+	color: #FFFCFC;
+  }
+}
