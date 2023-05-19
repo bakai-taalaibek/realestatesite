@@ -1,0 +1,15 @@
+.card__row{
+    display: flex;
+    column-gap: 122px;
+    align-items: center;
+}
+
+.card__main-img{
+    max-width: 622px;
+    margin-bottom: 20px;
+}
+
+.card__img-block{
+    display: flex;
+    column-gap: 20px;
+}
