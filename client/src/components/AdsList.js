@@ -1,5 +1,6 @@
 import db from '../db.json'
 import adService from '../services/ads'
+import { useEffect } from 'react'
 
 const Ad = ({ title, price, description, city, address, type, offer, area, rooms }) => {
   return (
@@ -17,8 +18,11 @@ const Ad = ({ title, price, description, city, address, type, offer, area, rooms
 }
 
 const AdsList = () => {
-  // const adsList = adService.getAll()
-  // console.log(adsList)
+
+
+  useEffect(() => {
+    const adsList = adService.getAll().then(response => console.log(response.data))
+  }) 
 
   return (
     <div className='flex flex-col justify-center items-center' >
