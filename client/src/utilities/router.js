@@ -2,10 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import ErrorPage from "../components/ErrorPage";
 import AdsList from "../components/AdsList";
-// import { Entry } from "../components/Entry";
 import { Profile } from "../components/Profile";
 import Register from "../components/Auth/Register/Register";
-// import Login from "../components/Auth/Login/Login";
+import Published from "../components/Published/Published";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "published",
+        element: <Published />,
       },
     ],
   },

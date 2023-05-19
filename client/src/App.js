@@ -5,6 +5,7 @@ import { useUser } from "./utilities/zustand";
 import adService from "./services/ads";
 import Navbar from "./components/Navbar/Navbar";
 import Error from "./components/Error/Error";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const { setUser } = useUser();
@@ -28,6 +29,7 @@ function App() {
       {/* </div>
       </div> */}
       {/* <Error /> */}
+      <Footer />
     </>
   );
 }
