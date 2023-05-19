@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { baseUrl } from '../utilities/zustand'
-const fullUrl = `${baseUrl}/api/v1/auth/authentication/api/v1/announcement/find/all`
+const fullUrl = `${baseUrl}/api/v1/announcement`
 
 let token = null
 
@@ -9,7 +9,7 @@ const setToken = newToken => {
 }
 
 const getAll = () => {
-  const request = axios.get(fullUrl)
+  const request = axios.get(`${fullUrl}/find/all`)
   return request.then(response => response.data)
 }
 
