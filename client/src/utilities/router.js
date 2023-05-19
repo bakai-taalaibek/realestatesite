@@ -5,6 +5,7 @@ import AdsList from "../components/AdsList";
 import { Profile } from "../components/Profile";
 import Register from "../components/Auth/Register/Register";
 import Published from "../components/Published/Published";
+import Card from "../components/Card/Card";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: "published",
         element: <Published />,
+      },
+      {
+        path: "card",
+        element: <Card />,
       },
     ],
   },

@@ -2,12 +2,6 @@ html {
   font-size: 62.5%;
 }
 
-.container {
-  max-width: 1294px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .footer {
   padding: 10rem 0 0.8rem;
   background-color: #153b86;
@@ -47,24 +41,23 @@ html {
 
 .footer__social {
   display: flex;
-  column-gap: 3.6rem;
-  align-items: center;
   justify-content: center;
+  column-gap: 3.6rem;
   color: #fffcfc;
   margin-bottom: 0.7rem;
 }
-.footer-insta p,
-.footer-telegram p {
+.footer__social-insta p,
+.footer__social-telegram p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.3rem;
 }
-.footer-insta {
+.footer__social-insta {
   display: flex;
   align-items: center;
   column-gap: 1.2rem;
 }
-.footer-telegram {
+.footer__social-telegram {
   display: flex;
   align-items: center;
   column-gap: 1.2rem;

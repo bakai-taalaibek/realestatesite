@@ -1,0 +1,95 @@
+.container {
+  max-width: 1294px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-top: 44px;
+}
+
+.card__row {
+  display: flex;
+  column-gap: 122px;
+  align-items: center;
+}
+
+.card__main-img {
+  max-width: 622px;
+  margin-bottom: 20px;
+}
+
+.card__img-block {
+  display: flex;
+  column-gap: 20px;
+}
+
+.card__title {
+  margin-left: 88px;
+}
+.card__img {
+  margin-left: 88px;
+}
+h1 {
+  font-family: "Jost";
+  font-style: normal;
+}
+.kv {
+  margin-top: 50px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #6a6a6a;
+}
+
+h3 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 46px;
+
+  color: #000000;
+  margin-left: 80px;
+}
+.frame {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 32px;
+
+  width: 512px;
+  height: 146px;
+
+  border: 1px solid #d2d2d2;
+  margin-bottom: 77px;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
+}
+h4 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+
+  color: #000000;
+}
+.map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90%;
+  width: 90%;
+  margin-bottom: 210px;
+}
