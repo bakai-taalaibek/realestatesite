@@ -27,8 +27,8 @@ const AdsList = () => {
   return (
     <div className='flex flex-col justify-center items-center' >
       { db.ads.map(ad => {
-        return <Ad 
-          title={ ad.title } 
+        return <Ad
+          title={ ad.title }
           price={ ad.price }
           description={ ad.description }
           city={ ad.city }
