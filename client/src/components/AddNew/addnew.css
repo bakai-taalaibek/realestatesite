@@ -1,0 +1,164 @@
+.container {
+  max-width: 1294px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-top: 44px;
+}
+.pole {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #000000;
+}
+.select-menu {
+  width: 300px;
+  margin-left: 104px;
+  margin-top: 48px;
+}
+.select-menu .select-btn {
+  display: flex;
+  height: 30px;
+  color: #6a6a6a;
+
+  padding: 4px 12px;
+  font-size: 18px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.select-menu .options {
+  position: relative;
+  padding: 0px;
+  margin-top: 10px;
+
+  background: #f4f4f4;
+}
+.options .option {
+  display: flex;
+  height: 30px;
+  cursor: pointer;
+  padding: 0 16px;
+
+  font-size: 18px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+}
+.options .option:hover {
+  background: rgba(63, 108, 230, 0.377);
+}
+.option .option-text {
+  font-size: 18px;
+  color: #6a6a6a;
+}
+.kvadrat {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 1264px;
+  height: 740px;
+  margin-bottom: 40px;
+  top: 782px;
+
+  /* Gray 5 */
+
+  border: 1px solid #e0e0e0;
+}
+
+.option-menu {
+  width: 300px;
+}
+.option-menu .option-btn {
+  display: flex;
+  height: 30px;
+  color: #6a6a6a;
+  padding: 4px 12px;
+  font-size: 18px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+  justify-content: space-between;
+}
+.box {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 32px;
+
+  width: 514px;
+  height: 268px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 77px;
+
+  margin-top: 50px;
+}
+
+.addp {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  margin-top: 12px;
+
+  /* Gray 3 */
+
+  color: #828282;
+}
+.imageAdd {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+.ppp {
+  position: absolute;
+  width: 483px;
+  height: 140px;
+  left: 730px;
+  top: 2403px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  /* Gray 3 */
+
+  color: #828282;
+}
+.addBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  gap: 10px;
+
+  position: absolute;
+  width: 301px;
+  height: 60px;
+  left: 732px;
+  top: 2662px;
+
+  background: #2e569d;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  color: #efefef;
+}

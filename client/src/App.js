@@ -28,8 +28,7 @@ function App() {
       <Outlet />
       {/* </div>
       </div> */}
-      {/* <Error /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

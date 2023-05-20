@@ -12,7 +12,7 @@ const Card = () => {
     <section className="card">
       {/* container */}
       <div className="container">
-        <p className="card__title mt-[60px] text-[#555555] mb-[80px]">
+        <p className="kv card__title mt-[60px] text-[#555555] mb-[80px]">
           Главная / Продажа недвижемости
         </p>
         <div className="card__row">
@@ -58,7 +58,7 @@ const Card = () => {
           <div className="frame">
             <img src={Calendar} alt="calendar" />
             <div className="schedule">
-              <h4>Пятница, 24 июня 2023 г</h4>
+              <h4 className="h4">Пятница, 24 июня 2023 г</h4>
               <p className="text-[18px] leading-[26px] font-normal mt-[3px]">
                 С 15:00 до 18:00
               </p>

@@ -6,6 +6,7 @@ import { Profile } from "../components/Profile";
 import Register from "../components/Auth/Register/Register";
 import Published from "../components/Published/Published";
 import Card from "../components/Card/Card";
+import AddNew from "../components/AddNew/AddNew";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
       {
         path: "card",
         element: <Card />,
+      },
+      {
+        path: "addNew",
+        element: <AddNew />,
       },
     ],
   },
