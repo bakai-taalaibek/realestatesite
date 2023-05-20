@@ -1,0 +1,22 @@
+.near{
+  padding-top: 8rem;
+  position: relative;
+  &__btn{
+	&-next,
+	&-prev{
+	  width: 1.7rem;
+	  height: 2.8rem;
+	}
+	&-next{
+	  position: absolute;
+	  top: 56%;
+	  right: 15%;
+	}
+	&-prev{
+	  position: absolute;
+	  top: 56%;
+	  left: 15%;
+	}
+  }
+}
+

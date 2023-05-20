@@ -1,0 +1,26 @@
+Index: .idea/workspace.xml
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,7 +4,11 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="0913fade-d689-4e9f-b728-93ad0cc18fa4" name="Changes" comment="" />
++    <list default="true" id="0913fade-d689-4e9f-b728-93ad0cc18fa4" name="Changes" comment="Добавил Сущности пользователя(User) и объявления(Announcement), а также CRUD к этим сущностям. По началу добавил файл data.sql по началу всё работало хорошо, но потом что-то вместе с файлом не запускается проект без него всё работает хорошо. В файле скрипты для заполнения бд.">
++      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -48,6 +52,7 @@
+   <component name="MavenImportPreferences">
+     <option name="generalSettings">
+       <MavenGeneralSettings>
++        <option name="mavenHome" value="Use Maven wrapper" />
+         <option name="useMavenConfig" value="true" />
+       </MavenGeneralSettings>
+     </option>

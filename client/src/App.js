@@ -1,10 +1,15 @@
-// import Header from "./components/Header";
-import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import * as reactRouterDom from "react-router-dom";
 import { useEffect } from "react";
 import { useUser } from "./utilities/zustand";
 import adService from "./services/ads";
 import Navbar from "./components/Navbar/Navbar";
-import Error from "./components/Error/Error";
+import Register from "./components/Auth/Register/Register";
+import TopSection from "./components/Top/TopSection";
+import Footer from "./components/Footer/Footer";
+import Card from "./components/Card/Card";
+import Login from "./components/Login";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const { setUser } = useUser();
@@ -21,13 +26,9 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Header /> */}
-      {/* <div className={body}>
-        <div className={contentArea}> */}
-      <Outlet />
-      {/* </div>
-      </div> */}
-      {/* <Error /> */}
+      <TopSection />
+        <Outlet />
+      <Footer />
     </>
   );
 }

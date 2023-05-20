@@ -1,0 +1,46 @@
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40.8rem, 1fr));
+  gap: 2rem;
+  &__item{
+	border: .1rem solid gray;
+  }
+  &__info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.6rem 2rem 1.2rem;
+	&-price{
+	  font-weight: 500;
+	  font-size: 24px;
+	}
+	&-date{
+	  font-size: 18px;
+	}
+  }
+  &__img{
+	width: 100%;
+  }
+  &__description{
+	padding: 1.2rem 0 1rem 2rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 1.2rem;
+	font-size: 1.8rem;
+	&-text{
+	  font-size: 1.8rem;
+	}
+  }
+  &__location{
+	padding: 0 0 1rem 2rem;
+	display: flex;
+	gap: .5rem;
+	&-text{
+	  font-size: 1.8rem;
+	}
+  }
+}
+
+
+
