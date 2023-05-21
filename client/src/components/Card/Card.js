@@ -6,8 +6,10 @@ import img3 from "./assets/img3.png";
 import img4 from "./assets/img4.png";
 import Calendar from "./assets/Calendar.png";
 import map from "./assets/map.png";
+import { useParams } from "react-router-dom"
 
 const Card = () => {
+  const { adId } = useParams()
   return (
     <section className="card">
       {/* container */}

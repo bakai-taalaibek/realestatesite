@@ -3,11 +3,7 @@ import App from "../App";
 import AdsList from "../components/AdsList";
 import { Entry } from "../components/Entry";
 import { Profile } from "../components/Profile";
-import Register from "../components/Auth/Register/Register";
-import Login from "../components/Auth/Login/Login";
-import Error from "../components/Error/Error";
-import Card from "../components/Card/Card";
-import AddNew from "../components/AddNew/AddNew";
+
 
 export const router = createBrowserRouter([
   {
@@ -28,7 +24,7 @@ export const router = createBrowserRouter([
         element: <Profile />,
       },
       {
-        path: "card",
+        path: ":adId",
         element: <Card />,
       },
       {

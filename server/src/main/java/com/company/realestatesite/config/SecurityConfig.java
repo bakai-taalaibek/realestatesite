@@ -17,7 +17,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final JwtTokenProvider jwtTokenProvider;
 
     private static final String LOGIN_ENDPOINT = "/api/v1/auth/**";
-    private static final String ALL_ANNOUNCEMENT = "/api/v1/announcement/find/all";
     private static final String ANNOUNCEMENT_ENDPOINT = "/api/v1/announcement/**";
 
     @Bean
@@ -33,7 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
-                .antMatchers(LOGIN_ENDPOINT, ALL_ANNOUNCEMENT).permitAll()
+                .antMatchers(LOGIN_ENDPOINT).permitAll()
                 .antMatchers(ANNOUNCEMENT_ENDPOINT).hasAnyAuthority("ROLE_USER")
                 //.antMatchers(LOGIN_ENDPOINT).hasAnyAuthority("ROLE_ADMIN")
                 //.anyRequest().authenticated()

@@ -5,25 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64c189ee-2120-4c79-91df-167834413ec9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/company/realestatesite/controllers/AllAnnouncementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/60bb1ff0-637e-4416-abd2-3f22a70bf031.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/60bb1ff0-637e-4416-abd2-3f22a70bf031.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/60bb1ff0-637e-4416-abd2-3f22a70bf031/storage_v2/_src_/database/db_realestate.y5QZBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/60bb1ff0-637e-4416-abd2-3f22a70bf031/storage_v2/_src_/database/db_realestate.y5QZBg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_05_2023_20_43_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_05_2023_20_43__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/realestatesite.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -121,7 +111,6 @@
         <item itemvalue="Spring Boot.realestatesiteApplication" />
         <item itemvalue="Spring Boot.realestatesiteApplication" />
         <item itemvalue="Spring Boot.realestatesiteApplication" />
-        <item itemvalue="Spring Boot.realestatesiteApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -137,18 +126,7 @@
       <workItem from="1684122437369" duration="6206000" />
       <workItem from="1684211093259" duration="1610000" />
       <workItem from="1684244047166" duration="1886000" />
-      <workItem from="1684512368043" duration="1547000" />
-      <workItem from="1684673453397" duration="688000" />
-      <workItem from="1684683543132" duration="300000" />
     </task>
-    <task id="LOCAL-00001" summary="Подправил баги теперь определённому пользователю отображаются только его объявления">
-      <created>1684673759611</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1684673759612</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +134,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Сделал метод для вывода объявлений по конкретному пользователю, там с изменением пользователя (update) до конца не разобрался. Также в файле data.sql поменял некоторые поля (type, offer) так как сделали enum пришлось поменять например: &quot;продажа&quot; -&gt; &quot;ПРОДАЖА&quot;." />
-    <MESSAGE value="Подправил баги теперь определённому пользователю отображаются только его объявления" />
-    <option name="LAST_COMMIT_MESSAGE" value="Подправил баги теперь определённому пользователю отображаются только его объявления" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал метод для вывода объявлений по конкретному пользователю, там с изменением пользователя (update) до конца не разобрался. Также в файле data.sql поменял некоторые поля (type, offer) так как сделали enum пришлось поменять например: &quot;продажа&quot; -&gt; &quot;ПРОДАЖА&quot;." />
   </component>
 </project>
