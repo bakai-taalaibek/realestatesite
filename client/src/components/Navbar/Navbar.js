@@ -8,6 +8,11 @@ import { useUser } from '../../utilities/zustand'
 const Navbar = () => {
   const { user } = useUser()
 
+  const navigate2 = useNavigate();
+  function logoClick() {
+    navigate2("/");
+  }
+
   return (
     <div className="bg-white p-10">
       <nav className="flex justify-between items-center w-[92%] mx-auto">
