@@ -76,7 +76,7 @@
       "numberOfRooms": 2,
       "city": "Ош",
       "address": "ул. Ленина 22",
-      "user_id": "0e9fb731-32b9-4f38-a6b8-06d315f9b65f"
+      "user_id": "1"
     },
     {
       "id": "faa97d3a-08f5-4c7e-8d34-8d0da2ce243f",
@@ -114,7 +114,7 @@
       "numberOfRooms": 1,
       "city": "Баткен",
       "address": "ул. Фрунзе 18",
-      "user_id": "b7d1eefd-25c3-4619-8d3c-71af39af7a16"
+      "user_id": "1"
     },
     {
       "id": "d9ec6a04-28b5-4c4e-bd90-5e7e3b55a34d",
