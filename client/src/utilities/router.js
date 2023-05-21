@@ -5,7 +5,6 @@ import { Entry } from "../components/Entry";
 import { Profile } from "../components/Profile";
 import Register from "../components/Auth/Register/Register";
 import Login from "../components/Auth/Login/Login";
-import Error from "../components/Error/Error";
 import Card from '../components/Card/Card'
 
 export const router = createBrowserRouter([
