@@ -7,6 +7,7 @@ import Register from "../components/Auth/Register/Register";
 import Login from "../components/Auth/Login/Login";
 import Error from "../components/Error/Error";
 import Card from "../components/Card/Card";
+import AddNew from "../components/AddNew/AddNew";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "card",
         element: <Card />,
+      },
+      {
+        path: "addNew",
+        element: <AddNew />,
       },
     ],
   },
