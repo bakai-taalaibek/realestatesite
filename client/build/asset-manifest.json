@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.77bf24d7.css",
-    "main.js": "/static/js/main.2d4d6bc3.js",
+    "main.css": "/static/css/main.3e1abd06.css",
+    "main.js": "/static/js/main.0f479d46.js",
+    "static/media/img1.png": "/static/media/img1.c00e85d845c6048d16f1.png",
     "static/media/img-1.jpg": "/static/media/img-1.69f3f5c92b906db8b046.jpg",
     "static/media/bg-map.png": "/static/media/bg-map.be7bf4efc65e8432bd39.png",
+    "static/media/img3.png": "/static/media/img3.8090bdb6025452cdde93.png",
+    "static/media/img4.png": "/static/media/img4.569846c806a2e52a14cc.png",
+    "static/media/img2.png": "/static/media/img2.1e12746eb0621740f257.png",
     "static/media/top-img.png": "/static/media/top-img.f4b6f92e5963750bc68a.png",
     "static/media/error.png": "/static/media/error.356aadfac7e49932d0eb.png",
     "static/media/human.png": "/static/media/human.ea44600c150a467e4073.png",
@@ -12,11 +16,11 @@
     "static/media/teleg.svg": "/static/media/teleg.6059c84f6e74f737fb530a1a397fdfd7.svg",
     "static/media/user.svg": "/static/media/user.32542e68c37d0e76cb50041ed07581ba.svg",
     "index.html": "/index.html",
-    "main.77bf24d7.css.map": "/static/css/main.77bf24d7.css.map",
-    "main.2d4d6bc3.js.map": "/static/js/main.2d4d6bc3.js.map"
+    "main.3e1abd06.css.map": "/static/css/main.3e1abd06.css.map",
+    "main.0f479d46.js.map": "/static/js/main.0f479d46.js.map"
   },
   "entrypoints": [
-    "static/css/main.77bf24d7.css",
-    "static/js/main.2d4d6bc3.js"
+    "static/css/main.3e1abd06.css",
+    "static/js/main.0f479d46.js"
   ]
 }

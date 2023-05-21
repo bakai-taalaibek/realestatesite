@@ -3,12 +3,11 @@ import { redirect, useNavigate } from 'react-router-dom'
 import { cardsConstructor } from './cardsConstructor';
 import db from '../db.json'
 import adService from "../services/ads";
+import { useAuthCheck } from "./useAuthCheck";
 
 export const Profile = () => {
 	const { user, setUser } = useUser()
   const navigate = useNavigate()
-
-  const filteredAds = db.ads.filter(ad => Number(ad.user_id) === user.id)
 
   const handleExit = () => {
     setUser(null)
@@ -19,7 +18,9 @@ export const Profile = () => {
     navigate('')
   }
 	
-	if (user) {    
+	if (user !== null) {
+		const filteredAds = db.ads.filter(ad => Number(ad.user_id) === user.id)
+
     return (
 			<div className="flex justify-evenly px-5">
 				<div className={ sideBar }>
@@ -47,4 +48,3 @@ bg-[#007ebf]
  mt-36 mb-32 pt-20 pb-28 
 sticky top-24 bottom-32 `
 
-// min-w-[calc(250px)] md:min-w-[calc(400px)] w-4/12 max-w-2xl

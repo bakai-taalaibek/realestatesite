@@ -9,9 +9,9 @@ import { cardsConstructor } from './cardsConstructor';
 
 const AdsList = () => {
 
-  // useEffect(() => {
-  //   const adsList = adService.getAll().then(response => console.log(response.data))
-  // }) 
+  useEffect(() => {
+    const adsList = adService.getAll().then(response => console.log(response.data))
+  }) 
 
   return (
     <>
