@@ -1,0 +1,72 @@
+Index: server/src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Datasource\r\nspring.datasource.url=jdbc:postgresql://localhost:5432/postgres\r\nspring.datasource.username=postgres\r\nspring.datasource.password=abdutokt2004\r\n#spring.datasource.hikari.schema=habit_tracker\r\nspring.datasource.driverClassName=org.postgresql.Driver\r\nspring.datasource.hikari.auto-commit=true\r\nspring.mvc.pathmatch.matching-strategy=ant_path_matcher\r\nspring.sql.init.mode=always\r\nspring.jackson.time-zone=Asia/Bishkek\r\n\r\n# Hibernate\r\nspring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect\r\nspring.jpa.defer-datasource-initialization=true\r\nspring.jpa.hibernate.ddl-auto=create\r\nspring.jpa.generate-ddl=true\r\nlogging.level.org.hibernate.SQL=DEBUG\r\nlogging.level.org.hibernate.type=TRACE\r\n\r\n# Log\r\nlogging.level.org.springframework.boot.autoconfigure=INFO
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/server/src/main/resources/application.properties b/server/src/main/resources/application.properties
+--- a/server/src/main/resources/application.properties	(revision c5b3609c39884c58deee1b280e61bc3b64c02106)
++++ b/server/src/main/resources/application.properties	(date 1683883263518)
+@@ -2,7 +2,7 @@
+ spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+ spring.datasource.username=postgres
+ spring.datasource.password=abdutokt2004
+-#spring.datasource.hikari.schema=habit_tracker
++spring.datasource.hikari.schema=realestatesite
+ spring.datasource.driverClassName=org.postgresql.Driver
+ spring.datasource.hikari.auto-commit=true
+ spring.mvc.pathmatch.matching-strategy=ant_path_matcher
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile default=\"true\" name=\"Default\" enabled=\"true\" />\r\n<<<<<<< HEAD\r\n    </annotationProcessing>\r\n=======\r\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <module name=\"realestatesite\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n    <bytecodeTargetLevel>\r\n      <module name=\"realestatesite\" target=\"11\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n  <component name=\"JavacSettings\">\r\n    <option name=\"ADDITIONAL_OPTIONS_OVERRIDE\">\r\n      <module name=\"realestatesite\" options=\"-parameters\" />\r\n    </option>\r\n>>>>>>> origin/main\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision c5b3609c39884c58deee1b280e61bc3b64c02106)
++++ b/.idea/compiler.xml	(date 1683885891878)
+@@ -3,9 +3,6 @@
+   <component name="CompilerConfiguration">
+     <annotationProcessing>
+       <profile default="true" name="Default" enabled="true" />
+-<<<<<<< HEAD
+-    </annotationProcessing>
+-=======
+       <profile name="Maven default annotation processors profile" enabled="true">
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+@@ -21,6 +18,5 @@
+     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+       <module name="realestatesite" options="-parameters" />
+     </option>
+->>>>>>> origin/main
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" default=\"true\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"jpab\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision c5b3609c39884c58deee1b280e61bc3b64c02106)
++++ b/.idea/misc.xml	(date 1683885891869)
+@@ -1,6 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" default="true">
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/server/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="openjdk-18" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+   <component name="ProjectType">

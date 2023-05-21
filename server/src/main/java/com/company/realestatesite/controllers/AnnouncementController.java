@@ -40,11 +40,11 @@ public class AnnouncementController {
         }
     }
 
-//    @GetMapping("/find/all")
-//    @ApiOperation("Вывод всех объявлений")
-//    ResponseEntity<List<AnnouncementDto>> findAll() {
-//        return ResponseEntity.ok(announcementService.findAll());
-//    }
+    @GetMapping("/find/all")
+    @ApiOperation("Вывод всех объявлений")
+    ResponseEntity<List<AnnouncementDto>> findAll() {
+        return ResponseEntity.ok(announcementService.findAll());
+    }
 
     @DeleteMapping("/delete")
     @ApiOperation("Удаления объявления")
