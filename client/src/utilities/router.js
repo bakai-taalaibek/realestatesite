@@ -6,7 +6,7 @@ import { Profile } from "../components/Profile";
 import Register from "../components/Auth/Register/Register";
 import Login from "../components/Auth/Login/Login";
 import Error from "../components/Error/Error";
-import Card from '../components/Card/Card'
+import Card from '../components/Card copy/Card'
 
 export const router = createBrowserRouter([
   {
