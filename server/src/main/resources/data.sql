@@ -1,8 +1,8 @@
 ----tb_role-----------------------------------------------------------------------------------------------------------
 insert into tb_role (status, name)
-VALUES ('ACTIVE', 'ROLE_ADMIN');
-insert into tb_role (status, name)
 VALUES ('ACTIVE', 'ROLE_USER');
+insert into tb_role (status, name)
+VALUES ('ACTIVE', 'ROLE_ADMIN');
 
 ----tb_users----------------------------------------------------------------------------------------------------------
 insert into tb_user(created, status, updated, year_of_birth, email, gender, password, username)
