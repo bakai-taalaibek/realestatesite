@@ -6,7 +6,7 @@ import add from "./assets/add.png";
 const AddNew = () => {
   return (
     <div className="container">
-      <p className="kv card__title mt-[60px] text-[#555555] mb-[120px]">
+      <p className="p card__title mt-[60px] text-[#555555] mb-[120px]">
         Главная / Продажа недвижемости
       </p>
 
