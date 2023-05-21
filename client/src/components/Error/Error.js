@@ -6,18 +6,17 @@ export default function Error() {
 
   return (
     <div className={errorMessageElement}>
-      <i className="text-[#828282]">{error.statusText || error.message}</i>
-      <h1 className="text-4xl text-[40px] font-bold text-black-400">Ошибка</h1>
+      <h1 className="text-4xl text-[40px] font-bold text-black-400 ">Ошибка</h1>
       <p className="text-[24px] font-bold text-[#828282]">
         Попробуйте перезагрузить страницу
       </p>
       <img src={Errorr} alt="" />
-      <p className="text-gray-500"></p>
+      <i className="text-[#828282] text-3xl">{error.statusText || error.message}</i>
     </div>
   );
 }
 
 const errorMessageElement = ` 
   min-h-screen grid content-center justify-items-center 
-  [&>*]:m-2 pb-10 
+  [&>*]:m-3 pb-10 
   text-xl `;

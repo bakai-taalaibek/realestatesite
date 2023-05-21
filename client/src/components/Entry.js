@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import Register from "./Register";
-import Login from "./Login";
+import Register from "./Auth/Register/Register";
+import Login from "./Auth/Login/Login";
 import { useUser } from "../utilities/zustand";
 import { useNavigate } from "react-router-dom";
+import human2 from './Auth/assets/human2.png'
 
 export const Entry = () => {
-  const [registrationBool, setRegistrationBool] = useState(true);
+  const [registrationBool, setRegistrationBool] = useState(false);
   const { user } = useUser();
   const navigate = useNavigate();
 
@@ -14,39 +15,31 @@ export const Entry = () => {
       navigate("/");
     }
   }, []);
-
+  
   return (
-    <div class={mainContainer}>
-      <div class={registrationBool ? activeTab : passiveTab}>
-        <button onClick={() => setRegistrationBool(true)}>
-          Зарегистрироваться
-        </button>
+    <div className="container">
+      <div className="flex justify-around  pb-72 pt-16">
+        <div className="w-3/4 py-16 px-12 ">
+          <button onClick={() => setRegistrationBool(false)}
+            className={ registrationBool ? passiveTab : activeTab }>
+            Вход
+          </button>
+          <button onClick={() => setRegistrationBool(true)}
+            className={ registrationBool ? activeTab : passiveTab }>
+            Регистрация
+          </button>
+          <div>{registrationBool ? <Register /> : <Login />} </div>
+        </div>
+
       </div>
-      <div class={registrationBool ? passiveTab : activeTab}>
-        <button onClick={() => setRegistrationBool(false)}>
-          Авторизироваться
-        </button>
-      </div>
-      <div className="w-96">{registrationBool ? <Register /> : <Login />}</div>
     </div>
+      // <div className="w-96"></div>
   );
 };
 
-const mainContainer = `
-  w-[calc(100%-1rem)] sm:max-w-md h-96 shadow
-  flex-wrap flex justify-evenly
-  bg-white dark:bg-gray-800 
-  rounded-lg dark:border dark:border-gray-700
-  mx-auto md:mt-0 xl:p-0  `;
 
 const activeTab = `
-  flex items-center justify-center grow 
-  h-10
-  text-blue-800 
-  bg-white  `;
+font-bold text-[40px] ml-12 lg:ml-28 mr-24 `;
 
 const passiveTab = `
-  flex items-center justify-center grow 
-  h-10
-  text-blue-800 
-  bg-gray-100 `;
+font-bold text-[32px] text-orange-400 underline ml-12 lg:ml-28 mr-24 `;

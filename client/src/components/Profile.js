@@ -1,5 +1,5 @@
 import { useUser } from "../utilities/zustand"
-import { useNavigate } from 'react-router-dom'
+import { redirect, useNavigate } from 'react-router-dom'
 import { cardsConstructor } from './cardsConstructor';
 import db from '../db.json'
 import adService from "../services/ads";
@@ -19,8 +19,8 @@ export const Profile = () => {
     navigate('')
   }
 	
-	if (user) {
-		return (
+	if (user) {    
+    return (
 			<div className="flex justify-evenly px-5">
 				<div className={ sideBar }>
 					<p className="mt-12 mb-6 mx-auto text-7xl text-[#c6d7e4] font-['Noto Sans'] ">ПРОФИЛЬ</p>
@@ -37,9 +37,7 @@ export const Profile = () => {
 				</div>
 			</div>
 		)
-	} else {
-		navigate('/')
-	}
+	} 
 }
 
 const sideBar = `
