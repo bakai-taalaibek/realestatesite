@@ -7,6 +7,8 @@ import Register from "../components/Auth/Register/Register";
 import Login from "../components/Auth/Login/Login";
 import Error from '../components/Error/Error'
 import Card from '../components/Card/Card'
+import { Sales } from "../components/Sales";
+import { Rent } from "../components/Rent";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ export const router = createBrowserRouter([
       {
         path: ":adId",
         element: <Card />,
+      },
+      {
+        path: "sales",
+        element: <Sales />,
+      },
+      {
+        path: "rent",
+        element: <Rent />,
       },
     ],
   },

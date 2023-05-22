@@ -1,19 +1,22 @@
 import db from '../db.json'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import TopSection from './Top/TopSection';
 import './Ads/ads.scss'
 import './Ads/_cards.scss'
 import { cardsConstructor } from './cardsConstructor';
 
-const AdsList = () => {
-  const [ filteredAds, setFilteredAds ] = useState(db.ads)
+export const Sales = () => {
+  const [ filteredAds, setFilteredAds ] = useState([])
 
+  useEffect(() => {
+    setFilteredAds(db.ads.filter(ad => ad.offer === 'продажа'))
+  }, [])
   // useEffect(() => {
   //   const adsList = adService.getAll().then(response => console.log(response.data))
   // }) 
 
   const setFilter = (type, query) => {
-    const firstArray = db.ads
+    const firstArray = db.ads.filter(ad => ad.offer === 'продажа')
 
     let secondArray = []    
     if (type === 'все') {
@@ -25,7 +28,7 @@ const AdsList = () => {
     const thirdArray = secondArray.filter(ad => {
       return ad.city.toLowerCase().includes(query.toLowerCase()) || ad.address.toLowerCase().includes(query.toLowerCase())
     })
-
+    
     setFilteredAds(thirdArray)
   }
 
@@ -38,5 +41,3 @@ const AdsList = () => {
     </>
   )
 }
-export default AdsList
-

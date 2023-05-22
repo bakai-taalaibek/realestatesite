@@ -1,9 +1,11 @@
 import { useUser } from "../utilities/zustand"
-import { redirect, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { cardsConstructor } from './cardsConstructor';
 import db from '../db.json'
 import adService from "../services/ads";
-import { useAuthCheck } from "./useAuthCheck";
+import { capitalize } from "./helperFunctions";
+import profileMale from './Assets/profileMale.jpg'
+import profileFemale from './Assets/profileFemale.jpg'
 
 export const Profile = () => {
 	const { user, setUser } = useUser()
@@ -24,16 +26,22 @@ export const Profile = () => {
     return (
 			<div className="flex justify-evenly px-5">
 				<div className={ sideBar }>
-					<p className="mt-12 mb-6 mx-auto text-7xl text-[#c6d7e4] font-['Noto Sans'] ">ПРОФИЛЬ</p>
-					<p className="my-8 ml-20 text-8xl text-white">{ user.username }</p>
-					<p className="my-8 ml-20 text-4xl text-gray-200">{ user.email }</p>
-					<p className="my-8 ml-20 text-3xl text-gray-200">Пол: { user.gender === 'MALE' ? 'Мужской' : 'Женский' } </p>
-					<p className="my-8 ml-20 text-3xl text-gray-200">Год рождения: { user.yearOfBirth }</p>
-          <button className="mt-12 mb-8 mx-auto text-6xl underline text-white"
-            onClick={ handleExit }>Выйти</button>
+					<p className=" mb-10  text-6xl text-black font-extrabold font-['Jost'] ">Профиль</p>
+
+					<div className="pt-5 pb-10 border-2 border-gray-500">
+						<img className="rounded-full" src={ user.gender === 'MALE' ? profileMale : profileFemale }  alt='profile' />
+						<p className="mb-6 ml-20 text-4xl font-['Jost'] font-semibold" >{ capitalize(user.username) }</p>
+						<p className="my-6 ml-20 text-4xl font-['Jost'] mb-16">{ user.email }</p>
+						<p className="my-6 ml-20 text-4xl font-['Jost']">Пол: { user.gender === 'MALE' ? 'Мужской' : 'Женский' } </p>
+						<p className="my-6 ml-20 text-4xl font-['Jost']">Год рождения: { user.yearOfBirth }</p>
+					</div>
+
+					<button className="bg-[#2E569D] w-[80%] h-20 mt-12 mb-8 text-white text-3xl "
+							onClick={ handleExit }>Выйти</button>
+
 				</div>
-				<div className='basis-2/3 flex flex-wrap shrink justify-center mt-20 max-w-[calc(1400px)]'>
-          <p className="text-8xl mt-20 w-full text-center font-bold text-teal-700">Ваши объявления:</p>
+				<div className=' basis-2/3 flex flex-wrap shrink justify-center content-start mt-20 max-w-[calc(1400px)]'>
+          <p className="text-7xl mt-20 mb-10 w-[80%] text-center font-bold text-teal-700">Ваши объявления:</p>
 					{ cardsConstructor(filteredAds) }
 				</div>
 			</div>
@@ -42,9 +50,8 @@ export const Profile = () => {
 }
 
 const sideBar = `
-flex flex-col  basis-1/3
-h-fit  min-w-[300px] max-w-3xl
-bg-[#007ebf]  
- mt-36 mb-32 pt-20 pb-28 
+flex flex-col  basis-1/4
+h-fit  min-w-[300px] max-w-lg
+ mt-10 mb-32 pt-20 pb-28 
 sticky top-24 bottom-32 `
 

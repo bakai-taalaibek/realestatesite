@@ -17,26 +17,16 @@ const Navbar = () => {
         </NavLink>
 
         <div className="">
-          <ul className="font-[400] flex items-center gap-[4vw] text-[22px] leading-[35px] normal">
+          <ul className="font-[400] flex items-stretch gap-[16vw] text-[26px] leading-[35px] normal">
             <li>
-              <a className="hover:text-gray-500 text-black" href="#">
+              <NavLink to='sales' className={ ({ isActive }) => isActive ? activeNavButton : passiveNavButton }>
                 Продажа
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-500 text-black">
+              <NavLink to='rent' className={ ({ isActive }) => isActive ? activeNavButton : passiveNavButton }>
                 Аренда
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-500 text-black">
-                Коммерческая
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-500 text-black">
-                Ипотека
-              </a> 
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -63,3 +53,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+const activeNavButton = `
+text-orange-500 hover:text-orange-400 text-[27px] `
+
+const passiveNavButton = `
+hover:text-gray-500 text-black`

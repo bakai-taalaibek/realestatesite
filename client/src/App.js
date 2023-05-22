@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { Outlet } from "react-router-dom";
 import { useAuthCheck } from "./components/useAuthCheck";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   const { setUser } = useUser();
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <Navbar />
+        <ScrollToTop />
         <Outlet />
       <Footer />
     </>

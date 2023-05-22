@@ -7,15 +7,19 @@ import img4 from "./assets/img4.png";
 import Calendar from "./assets/Calendar.png";
 import map from "./assets/map.png";
 import { useParams } from "react-router-dom"
+import db from '../../db.json'
+import { capitalize } from "../helperFunctions";
 
 const Card = () => {
   const { adId } = useParams()
+  const ad = db.ads.find(ad => ad.id === adId)
+
   return (
     <section className="card">
       {/* container */}
       <div className="container">
         <p className="p card__title mt-[60px] text-[#555555] mb-[80px]">
-          Главная / Продажа недвижемости
+          {/* Главная / Продажа недвижимости */}
         </p>
         <div className="card__row">
           <div className="card__img">
@@ -29,17 +33,13 @@ const Card = () => {
 
           <div className="card__description">
             <h1 className="text-[#000000] text-[40px] font-semibold">
-              Описание
+              { ad.title }
             </h1>
             <p className="p">
-              Квартира в отличном состоянии, недавно был проведен капитальный
-              ремонт. Все комнаты просторные и светлые, благодаря большим окнам,
-              которые обеспечивают естественное освещение. Дом находится в тихом
-              и уютном районе, но в то же время в непосредственной близости от
-              основных достопримечательностей и магазинов.
+              { ad.description } 
             </p>
-            <p className="text-[#000000] font-normal text-[40px] mt-[50px]">
-              $ 50 000
+            <p className="text-[#000000] font-normal text-[32px] mt-[50px]">
+              { ad.offer === 'продажа' ? `${ad.price} сом/кв. метр` : `${ad.price} сом/мес` }
             </p>
             <p className="text-[#000000] font-normal text-[32px] mt-[50px]">
               Алтынай К.
@@ -50,12 +50,14 @@ const Card = () => {
           </div>
         </div>
 
-        <hr class="h-px mt-16 border-[#4C4C4C] " />
+        <hr class="h-px mt-16  border-[#4C4C4C] " />
         <div className=" flex justify-evenly my-4 mt-[60px] mb-[60px]">
-          <p className=" text-[#153B86] font-medium text-[32px]">3 комнаты</p>
-          <p className=" text-[#153B86] font-medium text-[32px]">100 кв.м.</p>
-          <p className=" text-[#153B86] font-medium text-[32px]">5/10 этаж</p>
-          <p className=" text-[#153B86] font-medium text-[32px]">2007 года</p>
+          <p className=" text-[#153B86] font-medium text-[32px]"> { capitalize(ad.type) } </p>
+          <p className=" text-[#153B86] font-medium text-[32px]"> Комнат: { ad.numberOfRooms }</p>
+          <p className=" text-[#153B86] font-medium text-[32px]"> { ad.area } кв.м</p>
+          <p className=" text-[#153B86] font-medium text-[32px]"> { ad.city }, { ad.address }</p>
+          {/* <p className=" text-[#153B86] font-medium text-[32px]">5/10 этаж</p>
+          <p className=" text-[#153B86] font-medium text-[32px]">2007 года</p> */}
         </div>
         <hr class="h-px my-14 border-[#4C4C4C]" />
 
@@ -74,20 +76,20 @@ const Card = () => {
         <hr class="h-px mt-16 border-[#4C4C4C]" />
 
         {/* Детали */}
-        <div>
+        {/* <div>
           <h3 className="my-[50px]">Детали</h3>
           <div className="flex justify-around">
             <div className="">
               <ol className="list-disc">
                 <li className="font-medium  text-[28px]">
-                  Город: <span className="font-normal">Бишкек</span>
+                  Город: <span className="font-normal">{ ad.city }</span>
                 </li>
                 <li className="font-medium  text-[28px]">
-                  Адрес: <span className="font-normal"> Токтогула 140</span>
+                  Адрес: <span className="font-normal">{ ad.address }</span>
                 </li>
                 <li className="font-medium  text-[28px]">
                   Тип недвижимости:
-                  <span className="font-normal"> Жилое помещение</span>
+                  <span className="font-normal"> { ad.type }</span>
                 </li>
               </ol>
             </div>
@@ -107,7 +109,7 @@ const Card = () => {
               </ol>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Детали */}
         <div>
           <h3 className="mt-[80px] mb-[40px]">Расположение</h3>

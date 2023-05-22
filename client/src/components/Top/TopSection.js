@@ -1,7 +1,17 @@
 import './TopSection.scss'
 import './_animation.scss'
 import top from "./assets/top-img.png";
-const TopSection = () => {
+import { useState } from 'react'
+
+const TopSection = ({ setFilter }) => {
+  const [ type, setType ] = useState('все')
+  const [ query, setQuery ] = useState('')
+
+  const handleFilter = (event) => {
+    event.preventDefault()
+    setFilter(type, query) 
+  }
+   
   return (
     <section className="top">
       <div className="container">
@@ -12,17 +22,28 @@ const TopSection = () => {
               <p className="title-first__secondary">аренда и продажа недвижимости в вашем городе</p>
             </h1>
 
-            <form action="#" className="top__search">
+            <form className="top__search" onSubmit={ handleFilter }>
               <div className="top__search-select">
-                <p className="top__search-select-text">Аренда</p>
-                <p clas="top__search-select-icon">
+                <select
+                  className='text-center w-40 bg-[#f3f3f3]'
+                  value={ type }
+                  onChange={ ({ target }) => setType(target.value) }>
+                  <option value="все">Все</option>
+                  <option value="квартира">Квартира</option>
+                  <option value="дом">Дом</option>
+                  <option value="земля">Земля</option>
+                  <option value="дача">Дача</option>
+                  <option value="коммерческая_недвижимость">Коммерческая недвижимость</option>
+                </select>
+                {/* <p className="top__search-select-text">Аренда</p> */}
+                {/* <p clas="top__search-select-icon">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M0.304688 2.77734C0.101562 2.98828 0 3.23828 0 3.52734C0 3.81641 0.101562 4.0625 0.304688 4.26562L5.26172 9.22266C5.46484 9.42578 5.71094 9.52734 6 9.52734C6.28906 9.52734 6.53516 9.42578 6.73828 9.22266L11.6953 4.26562C11.8984 4.0625 12 3.81641 12 3.52734C12 3.23828 11.8984 2.98828 11.6953 2.77734C11.4922 2.57422 11.2441 2.47266 10.9512 2.47266C10.6582 2.47266 10.4102 2.57422 10.207 2.77734L6 6.98438L1.79297 2.77734C1.58984 2.57422 1.3418 2.47266 1.04883 2.47266C0.755859 2.47266 0.507812 2.57422 0.304688 2.77734Z"
                       fill="#4C4C4C"/>
                   </svg>
-                </p>
+                </p> */}
               </div>
 
               <p className="top__search-input-icon">
@@ -41,9 +62,16 @@ const TopSection = () => {
                   </defs>
                 </svg>
               </p>
-              <input type="search" className="top__search-input"
-                   placeholder="Город, район, название улицы" />
-                <p className="top__search-icon">
+              <input type="search" 
+                className="top__search-input"
+                placeholder="Город, район, название улицы"
+                value={ query } 
+                onChange={ (event) => setQuery(event.target.value) } />
+              <button type='submit' >
+                  <span className='text-4xl relative left-[-40px]'>&#128269;</span>
+              </button>
+              
+                {/* <p className="top__search-icon">
                   <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_33_747)">
@@ -58,7 +86,7 @@ const TopSection = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                </p>
+                </p> */}
             </form>
 
           </div>
