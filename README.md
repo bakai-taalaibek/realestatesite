@@ -1,5 +1,5 @@
 # realestatesite
-A group project - development of a real estate site
+A group project - development of a real estate web-site
 
 Project is developed by:  
 Нурзада Касымова     - UX/UI  
